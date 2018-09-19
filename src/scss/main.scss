@@ -1,0 +1,73 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background: red;
+    transition: background-color 0.5s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial sans-serif;
+    color: #111;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.colour-input {
+    font-size: 0;
+}
+
+input {
+    appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    padding: 1.6rem;
+    text-align: center;
+    font-family: monospace;
+    color: #111;
+    font-size: 1.6rem;
+
+    &:nth-child(1) {
+        border-radius: 0.5rem 0 0 0.5rem;
+        margin-right: 0.1rem;
+    }
+
+    &:nth-child(2) {
+        border-radius: 0;
+    }
+}
+
+button {
+    padding: 1.6rem;
+    border: none;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 0.1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: #1d1d1d;
+    color: #ffffff;
+
+    &:hover {
+        background-color: #222222;
+    }
+}
+
+.print {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    &__number {
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        height: 5rem;
+    }
+}
